@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "688576",
+      "name": "置顶",
+      "font_class": "zhiding",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "2076276",
+      "name": " 唱歌",
+      "font_class": "changge",
+      "unicode": "e895",
+      "unicode_decimal": 59541
+    },
+    {
+      "icon_id": "4198406",
+      "name": "音乐",
+      "font_class": "yinle",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "9851604",
+      "name": "日期",
+      "font_class": "riqi",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "20000252",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

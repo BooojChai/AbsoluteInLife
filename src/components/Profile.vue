@@ -1,0 +1,137 @@
+<template>
+    <div class="profile">
+        <img src="../assets/avatar.jpg" alt="">
+
+        <div class="name">{{name}}</div>
+
+        <div class="sign">{{sign}}</div>
+
+        <div class="aboutme profile_title">About Me</div>
+
+        <div class="profile_content">
+            <li v-for="(item, index) in prop" :key="index">{{prop[index]}}</li>
+        </div>
+
+        <div class="findme profile_title">Find Me Here</div>
+
+        <div class="profile_content">
+            <div v-for="(item, index) in findme" :key="index">
+                <span :class="findme[index].iconClass"></span>
+                <span><a :href="findme[index].url" target="_blank">{{findme[index].text}}</a></span>
+            </div>
+        </div>
+
+        <div class="Friends profile_title">
+            Friends
+        </div>
+
+        <div class="profile_content">
+            <span v-for="(item, index) in friends" :key="index"><a :href="friends[index].url" target="_blank">{{friends[index].name}}</a></span>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            name: "Bojun Chai",
+            sign: "即使缓慢，但步履不停。",
+            prop: ["正在奔三的微软工程师", "业余吉他手/鼓手/贝斯手/唱作人",
+                "最喜欢做的事情是“动脑子”", "一个新生男孩的爸爸"],
+            findme: [
+                {
+                    iconClass: ["iconfont", "icon-changge"],
+                    url: "https://music.163.com/#/user/home?id=370053934",
+                    text: "Songwriter - NetEase Cloud Music"
+                },
+                {
+                    iconClass: ["iconfont", "icon-yinle"],
+                    url: "https://music.163.com/#/user/home?id=67230984",
+                    text: "YouthSquare Band"
+                },
+                {
+                    iconClass: ["iconfont", "icon-shipin"],
+                    url: "https://space.bilibili.com/89096037?spm_id_from=333.1007.0.0",
+                    text: "YouthSquare Band - Bilibili"
+                }
+            ],
+            friends: [
+                {
+                    url: "https://github.com/daviddwlee84",
+                    name: "David Lee"
+                },
+                {
+                    url: "https://github.com/SamuelQZQ",
+                    name: "Samuel Qian"
+                },
+                {
+                    url: "https://music.163.com/#/user/home?id=1515499305",
+                    name: "强倩Airice"
+                },
+                {
+                    url: "https://space.bilibili.com/23261993/?spm_id_from=333.999.0.0",
+                    name: "强倩Airice - Bilibili"
+                },
+                {
+                    url: "http://eureka-moment-fm.com/",
+                    name: "Eureka Moment"
+                },
+                {
+                    url: "https://space.bilibili.com/1526622975",
+                    name: "ReturnTrue - Bilibili"
+                },
+                {
+                    url: "https://aka.ms/returntrue",
+                    name: "ReturnTrue - HomePage"
+                }
+            ]
+        }
+    },
+}
+</script>
+
+<style>
+    .profile {
+        width: 300px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img {
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .profile .name {
+        font-size: 28px;
+        color: #CFCFCF;
+        margin-top: 10px;
+    }
+
+    .profile .profile_title {
+        margin-top: 15px;
+        font-size: 20px;
+        line-height: 40px;
+        width: 100%;
+        text-align: profile;
+        border-top: 1px solid #333;
+    }
+
+    .profile .profile_content {
+        width: 100%;
+        text-align: profile;
+    }
+
+    .profile .profile_content a:hover {
+        color: #B7452f;
+    }
+
+    .profile .profile_content span {
+        margin-right: 15px;
+    }
+</style>
