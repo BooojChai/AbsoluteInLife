@@ -69,42 +69,42 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
     .card {
         padding: 20px;
         padding-left: 30px;
         background-color: #181818;
         border-radius: 10px;
-    }
 
-    .card .content {
-        margin: 20px 0;
-        font-size: 18px;
-        line-height: 1.625;
-        font-weight: 500;
-    }
+        .content {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.625;
+            font-weight: 500;
 
-    .card .content p,
-    .card .content div,
-    .card .content img {
-        margin-bottom: 12px;
-    }
+            p,
+            div,
+            img {
+                margin-bottom: 12px;
+            }
 
-    .card .content .p_ending {
-        border-top: 1px dashed #777;
-        margin-top: 10px;
-        padding-top: 10px;
-    }
+            .p_ending {
+                border-top: 1px dashed #777;
+                margin-top: 10px;
+                padding-top: 10px;
+            }
 
-    .card .content img {
-        width: 100%;
-    }
+            img {
+                width: 100%;
+            }
 
-    .card .content li {
-        padding-left: 20px;
-    }
+            li {
+                padding-left: 20px;
+            }
 
-    .card .content li:hover a {
-        color: #B7452f;
+            li:hover a {
+                color: #B7452f;
+            }
+        }
     }
 </style>

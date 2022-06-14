@@ -18,23 +18,23 @@ export default {
 }
 </script>
 
-<style>
-.footer {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
+<style lang="less" scoped>
+  .footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
-.footer .power span,
+    .power span,
 
-.footer a {
-  color: #f7452f;
-}
+    a {
+      color: #f7452f;
+    }
 
-.footer .ending {
-  font-size: 14px;
-}
+    .ending {
+      font-size: 14px;
+    }
+  }
 </style>

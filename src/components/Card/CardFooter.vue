@@ -26,19 +26,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
     .card-footer {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-    }
 
-    .card-footer span {
-        margin-right: 5px;
-    }
+        span {
+            margin-right: 5px;
+        }
 
-    .card-footer .right {
-        font-weight: 700;
+        .right {
+            font-weight: 700;
+        }
     }
 </style>

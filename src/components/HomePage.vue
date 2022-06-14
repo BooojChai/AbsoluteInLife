@@ -31,16 +31,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
 .homepage .main {
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
-}
 
-.homepage .main .cards {
-    flex: 1;
-    margin-left: 20px;
-    padding: 0 10px;
+    .cards {
+        flex: 1;
+        margin-left: 20px;
+        padding: 0 10px;
+    }
 }
 </style>

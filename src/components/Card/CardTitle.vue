@@ -16,18 +16,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
     .card-title {
         color: #CFCFCF;
         font-size: 30px;
-    }
 
-    .card-title span {
-        margin-right: 20px;
-    }
+        span {
+            margin-right: 20px;
+        }
 
-    .card-title .icon-zhiding {
-        font-size: inherit;
+        .icon-zhiding {
+            font-size: inherit;
+        }
     }
 
     .card-title:hover {

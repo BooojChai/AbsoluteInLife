@@ -37,7 +37,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
     .banner {
         position: relative;
         width: 100%;
@@ -46,38 +46,38 @@ export default {
         background-size: cover;
         background-position: 0 -260px;
         color: #DFDFDF;
-    }
 
-    .banner .title {
-        font-family: "Oswald-Regular";
-        padding-top: 48px;
-        text-align: center;
-        font-size: 70px;
-    }
+        .title {
+            font-family: "Oswald-Regular";
+            padding-top: 48px;
+            text-align: center;
+            font-size: 70px;
+        }
 
-    .banner .title-trans-enter-active,
-    .banner .title-trans-leave-active {
-        transition: all 1s;
-    }
+        .title-trans-enter-active,
+        .title-trans-leave-active {
+            transition: all 1s;
+        }
 
-    .banner .title-trans-enter,
-    .banner .title-trans-leave-to {
-        padding-top: 33px;
-        opacity: 0;
-    }
+        .title-trans-enter,
+        .title-trans-leave-to {
+            padding-top: 33px;
+            opacity: 0;
+        }
 
-    .banner .my-word {
-        font-size: 24px;
-        text-align: center;
-    }
+        .my-word {
+            font-size: 24px;
+            text-align: center;
+        }
 
-    .banner .my-word-trans-enter-active,
-    .banner .title-trans-leave-active {
-        transition: all 1s;
-    }
+        .my-word-trans-enter-active,
+        .title-trans-leave-active {
+            transition: all 1s;
+        }
 
-    .banner .my-word-trans-enter,
-    .banner .my-word-trans-leave-to {
-        opacity: 0;
+        .my-word-trans-enter,
+        .my-word-trans-leave-to {
+            opacity: 0;
+        }
     }
 </style>

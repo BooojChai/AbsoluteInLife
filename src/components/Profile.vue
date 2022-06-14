@@ -6,26 +6,26 @@
 
         <div class="sign">{{sign}}</div>
 
-        <div class="aboutme profile_title">About Me</div>
+        <div class="aboutme title">About Me</div>
 
-        <div class="profile_content">
+        <div class="content">
             <li v-for="(item, index) in prop" :key="index">{{prop[index]}}</li>
         </div>
 
-        <div class="findme profile_title">Find Me Here</div>
+        <div class="findme title">Find Me Here</div>
 
-        <div class="profile_content">
+        <div class="content">
             <div v-for="(item, index) in findme" :key="index">
                 <span :class="findme[index].iconClass"></span>
                 <span><a :href="findme[index].url" target="_blank">{{findme[index].text}}</a></span>
             </div>
         </div>
 
-        <div class="Friends profile_title">
+        <div class="Friends title">
             Friends
         </div>
 
-        <div class="profile_content">
+        <div class="content">
             <span v-for="(item, index) in friends" :key="index"><a :href="friends[index].url" target="_blank">{{friends[index].name}}</a></span>
         </div>
     </div>
@@ -91,47 +91,45 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
     .profile {
         width: 300px;
         padding-top: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
-    .profile img {
-        margin-top: 10px;
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
-    }
+        img {
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
 
-    .profile .name {
-        font-size: 28px;
-        color: #CFCFCF;
-        margin-top: 10px;
-    }
+        .name {
+            font-size: 28px;
+            color: #CFCFCF;
+            margin-top: 10px;
+        }
 
-    .profile .profile_title {
-        margin-top: 15px;
-        font-size: 20px;
-        line-height: 40px;
-        width: 100%;
-        text-align: profile;
-        border-top: 1px solid #333;
-    }
+        .title {
+            margin-top: 15px;
+            font-size: 20px;
+            line-height: 40px;
+            width: 100%;
+            border-top: 1px solid #333;
+        }
 
-    .profile .profile_content {
-        width: 100%;
-        text-align: profile;
-    }
+        .content {
+            width: 100%;
 
-    .profile .profile_content a:hover {
-        color: #B7452f;
-    }
+            span {
+                margin-right: 15px;
+            }
+        }
 
-    .profile .profile_content span {
-        margin-right: 15px;
+        .content a:hover {
+            color: #B7452f;
+        }
     }
 </style>
