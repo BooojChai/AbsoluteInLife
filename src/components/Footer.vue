@@ -27,9 +27,7 @@ export default {
     justify-content: center;
     text-align: center;
 
-    .power span,
-
-    a {
+    .power span, a {
       color: #f7452f;
     }
 

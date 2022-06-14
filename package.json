@@ -8,7 +8,11 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.9",
+    "nanoid": "^4.0.0",
+    "pubsub-js": "^1.9.4",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -36,7 +40,7 @@
       "x-invalid-end-tag": false
     },
     "rules": {
-      "vue/multi-word-component-names":"off"
+      "vue/multi-word-component-names": "off"
     }
   },
   "browserslist": [

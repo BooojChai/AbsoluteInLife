@@ -108,7 +108,7 @@ export default {
 
         .name {
             font-size: 28px;
-            color: #CFCFCF;
+            color: #AFAFAF;
             margin-top: 10px;
         }
 

@@ -1,9 +1,9 @@
 <template>
     <div class="banner">
-        <transition name="title-trans">
-            <div class="title" v-if="title.show">{{title.text}}</div>
+        <transition name="title-trans" appear>
+            <div class="title">{{title.text}}</div>
         </transition>
-        <transition name="my-word-trans">
+        <transition name="my-word-trans" appear>
             <div class="my-word" v-if="myWord.show">{{myWord.text}}</div>
         </transition>
     </div>
@@ -14,8 +14,7 @@ export default {
     data() {
         return {
             title: {
-                text: "Hi There,",
-                show: false
+                text: "Hi There,"
             },
             myWord: {
                 text: "To find the absolute in your life.",
@@ -25,7 +24,6 @@ export default {
     },
     methods: {
         startUp() {
-            this.title.show = true
             setTimeout(() => {
                 this.myWord.show = true
             }, 1000);
@@ -46,6 +44,7 @@ export default {
         background-size: cover;
         background-position: 0 -260px;
         color: #DFDFDF;
+        opacity: .8;
 
         .title {
             font-family: "Oswald-Regular";
@@ -54,15 +53,13 @@ export default {
             font-size: 70px;
         }
 
-        .title-trans-enter-active,
-        .title-trans-leave-active {
-            transition: all 1s;
-        }
-
-        .title-trans-enter,
-        .title-trans-leave-to {
+        .title-trans-enter {
             padding-top: 33px;
             opacity: 0;
+        }
+
+        .title-trans-enter-active {
+            transition: all 2s;
         }
 
         .my-word {
@@ -70,13 +67,11 @@ export default {
             text-align: center;
         }
 
-        .my-word-trans-enter-active,
-        .title-trans-leave-active {
-            transition: all 1s;
+        .my-word-trans-enter-active {
+            transition: all 4s;
         }
 
-        .my-word-trans-enter,
-        .my-word-trans-leave-to {
+        .my-word-trans-enter {
             opacity: 0;
         }
     }
