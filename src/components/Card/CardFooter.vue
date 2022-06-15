@@ -13,15 +13,14 @@
 export default {
     props: {
         text: {
-            left: {
-                type: String,
-                default: "It's footer left"
-            },
-            right: {
-                type: String,
-                default: "It's footer right"
+            type: Object,
+            default: function () {
+                return {
+                    left: "This is footer left",
+                    right: 'This is footer right'
+                }
             }
-        }
+        },
     }
 }
 </script>
