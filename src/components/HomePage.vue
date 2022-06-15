@@ -4,7 +4,7 @@
         <div class="main wrapper">
             <Profile/>
             <div class="cards">
-                <Card :title="'01. 关于这里，关于我'" :footer="{left:'2022/06/06',right:'第一篇文章'}">
+                <Card :title="'01. 关于这里，关于我'" :footer="{left:'2022/06/06',right:'#第一篇文章'}">
                     <div class="content" v-pre>
                         <p>嗨，你好。</p>
 
