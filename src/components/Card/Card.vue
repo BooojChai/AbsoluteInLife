@@ -1,5 +1,6 @@
 <template>
     <div class="card">
+        <img :src="backgroundImage" alt="">
         <CardTitle :text="title"></CardTitle>
         <slot></slot>
         <CardFooter :text="footer"></CardFooter>
@@ -25,6 +26,9 @@ export default {
                 }
             }
         },
+        backgroundImage: {
+            type: String
+        }
     },
     components: {
         CardTitle,
@@ -35,10 +39,22 @@ export default {
 
 <style lang="less" scoped>
     .card {
+        position: relative;
         padding: 20px;
         padding-left: 30px;
-        background-color: #181818;
         border-radius: 10px;
+        border: #161616 1px solid;
+        background-size: cover;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: .2;
+            z-index: -1;
+        }
 
         .content {
             margin: 20px 0;

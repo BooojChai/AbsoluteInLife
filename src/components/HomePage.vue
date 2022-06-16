@@ -4,7 +4,7 @@
         <div class="main wrapper">
             <Profile/>
             <div class="cards">
-                <Card :title="'01. 关于这里，关于我'" :footer="{left:'2022/06/06',right:'#第一篇文章'}" @click.native="navigateToArticle('/Article-01')">
+                <Card :title="'01. 关于这里，关于我'" :footer="{left:'2022/06/06',right:'#第一篇文章'}" @click.native="navigateToArticle('/Article-01')" :backgroundImage="require('./Article/Page/assets/ABG2.jpg')">
                     <div class="content" v-pre>
                         <p>嗨，你好。</p>
 

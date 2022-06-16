@@ -20,6 +20,13 @@
       "unicode_decimal": 59541
     },
     {
+      "icon_id": "2418238",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
       "icon_id": "4198406",
       "name": "音乐",
       "font_class": "yinle",

@@ -1,11 +1,16 @@
 <template>
-    <div class="header wrapper">
-        <transition name="title-trans" appear>
-            <div class="title">{{title}}</div>
+    <div class="header">
+        <transition name="icon-trans" appear>
+            <div class="iconfont icon-fanhui" @click="$router.back()"></div>
         </transition>
-        <transition name="my-word-trans" appear>
-            <div class="my-word" v-if="myWord.show">{{myWord.text}}</div>
-        </transition>
+        <div class="wrapper">
+            <transition name="title-trans" appear>
+                <div class="title">{{title}}</div>
+            </transition>
+            <transition name="my-word-trans" appear>
+                <div class="my-word" v-if="myWord.show">{{myWord.text}}</div>
+            </transition>
+        </div>
     </div>
 </template>
 
@@ -49,6 +54,21 @@ export default {
         color: #DFDFDF;
         opacity: .8;
         padding-left: 10px;
+
+        .icon-fanhui {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 40px;
+        }
+
+        .icon-trans-enter {
+            opacity: 0;
+        }
+
+        .icon-trans-enter-active {
+            transition: all 5s;
+        }
 
         .title {
             font-family: "Oswald-Regular";

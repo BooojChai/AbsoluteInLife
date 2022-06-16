@@ -61,7 +61,6 @@ export default {
         CardFooter
     },
     mounted() {
-        console.log("aaa")
         this.$scrollTo()
     },
 }
@@ -69,7 +68,7 @@ export default {
 
 <style lang="less" scoped>
 .article {
-    background-image: url(../../../assets/ABG2.jpg);
+    background-image: url(./assets/ABG2.jpg);
     background-size: cover;
 
     .main {
