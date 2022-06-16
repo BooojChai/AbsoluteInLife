@@ -46,6 +46,7 @@ export default {
         border: #161616 1px solid;
         background-size: cover;
         overflow: hidden;
+        margin-bottom: 20px;
 
         img {
             position: absolute;
@@ -66,12 +67,6 @@ export default {
             div,
             img {
                 margin-bottom: 12px;
-            }
-
-            .p_ending {
-                border-top: 1px dashed #777;
-                margin-top: 10px;
-                padding-top: 10px;
             }
 
             img {

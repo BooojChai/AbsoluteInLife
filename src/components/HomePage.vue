@@ -8,18 +8,26 @@
                     <div class="content" v-pre>
                         <p>嗨，你好。</p>
 
-                        <p>我是Bojun，一名<strong
-                                class="red">微软中国</strong>的软件工程师，主业是<strong>Android客户端开发</strong>，目前正向<strong>大前端开发</strong>转型。如你所见，这里是我的前端始发站。<br>
+                        <p>这里是Bojun，一名<strong
+                                class="red"> 微软中国 </strong>的软件工程师，主业是<strong> Android客户端开发</strong>，目前正向<strong>大前端开发</strong>转型。如你所见，这里是我的前端始发站。<br>
                         </p>
 
-                        <p>加入微软之前我曾就职于<strong class="red">三星电子</strong>和<strong
-                                class="red">OPPO</strong>。在三星工作时，我所在的项目组创造了三连跪的传奇：做智能手机软件，做了半年<strong>业务线整个砍掉</strong>。
-                            后来做智能手表应用开发，做了一年半<strong>业务线整体迁出中国</strong>。最后做智能手环框架，在看到起色时<strong>项目黄了</strong>，我也离职并加入OPPO，从零开始接触Android，先后浅尝了<strong>系统优化和游戏优化</strong>的滋味，最终误打误撞做起了系统开放能力，成为<strong>ColorOS生态建设</strong>的浇水工。
+                        <p>
+                            我意识到自己的平凡，于是不断尝试在这个世界上留下我存在过的痕迹。<br>
+                            而这里就是我最新鲜的一步脚印，会驻足许久的土壤。
                         </p>
+                    </div>
+                </Card>
 
-                        <div>目前我就职于微软中国，正在为<strong class="red">Bing Search</strong>和<strong class="red">Microsoft
-                                Start</strong>两款移动端产品添砖加瓦。
-                        </div>
+                <Card :title="'02. 双非一本程序员的大厂之路（上）'" :footer="{left:'2022/06/16',right:'#正在Coding'}" @click.native="navigateToArticle('/')" :backgroundImage="require('./Article/Page/assets/ABG2.jpg')">
+                    <div class="content" v-pre>
+                        <p>工作六年以来，我已经待过<strong class="red"> 四家公司 </strong>，如果给他们从1到4编个号，那么按照<strong class="red">公司属性</strong>做分类，他们分别是：<br>
+                            <strong>01. 中型民营私企、02. 一线电子厂外企、03. 大型民营私企、04. 世界一流外企；</strong><br>
+                            按照我所从事的 <strong class="red">产品类型</strong> 分类，他们分别是：<br>
+                            <strong>01. 嵌入式通信软件、02. 穿戴设备软件/框架、03. Android系统与应用、04. 基于混合框架的移动端应用；</strong><br>
+                            按照我使用的 <strong class="red">技术栈与编程语言</strong> 分类，他们分别是：<br>
+                            <strong>01. DVB/C/C++、02. Tizen OS/C/C++、03. Android/C++/Java、04. Android/Vue/React/Kotlin/JS；</strong><br>
+                        </p>
                     </div>
                 </Card>
             </div>
@@ -50,7 +58,7 @@ export default {
             console.log("aaa")
             this.$router.push(where)
         }
-    },
+    }
 }
 </script>
 
