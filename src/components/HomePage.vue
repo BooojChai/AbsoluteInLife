@@ -19,14 +19,20 @@
                     </div>
                 </Card>
 
-                <Card :title="'02. 双非一本程序员的大厂之路（上）'" :footer="{left:'2022/06/16',right:'#正在Coding'}" @click.native="navigateToArticle('/')" :backgroundImage="require('./Article/Page/assets/ABG2.jpg')">
+                <Card :title="'02. 双非一本程序员的大厂之路（上）'" :footer="{left:'2022/06/16',right:'#正在Coding'}" @click.native="navigateToArticle('/')" :backgroundImage="require('./Article/Page/assets/ABG3.jpg')">
                     <div class="content" v-pre>
-                        <p>工作六年以来，我已经待过<strong class="red"> 四家公司 </strong>，如果给他们从1到4编个号，那么按照<strong class="red">公司属性</strong>做分类，他们分别是：<br>
-                            <strong>01. 中型民营私企、02. 一线电子厂外企、03. 大型民营私企、04. 世界一流外企；</strong><br>
-                            按照我所从事的 <strong class="red">产品类型</strong> 分类，他们分别是：<br>
-                            <strong>01. 嵌入式通信软件、02. 穿戴设备软件/框架、03. Android系统与应用、04. 基于混合框架的移动端应用；</strong><br>
-                            按照我使用的 <strong class="red">技术栈与编程语言</strong> 分类，他们分别是：<br>
-                            <strong>01. DVB/C/C++、02. Tizen OS/C/C++、03. Android/C++/Java、04. Android/Vue/React/Kotlin/JS；</strong><br>
+                        <p>2016年，我从苏南某座小城的某所双非一本大学通信工程专业毕业，一晃已工作六年，而微软已经是我呆过的<strong class="red">第四家公司</strong>。按照公司属性给我的前东家和东家们做个分类，他们分别是：<br>
+                            <strong>中型民营私企、一线电子厂外企、大型民营私企、世界一流外企。</strong>
+                        </p>
+                        <p>
+                            在每一家公司<strong>使用的技术栈，负责的产品类型</strong>也完全不同，而在职期间的体验与经历更是云泥之别，有如过山车一般跌宕起伏。
+                        </p>
+                        <p>
+                            接下来我会分成上下两篇来回顾，回首我目前的职业生涯路径，寻找来路上<strong class="red">遗失的宝藏，错过的风景。</strong>
+                        </p>
+                        <p>
+                            这不是就业指南，也尽量少做观点输出。<br>
+                            如果你能从中得到点什么，那就太棒了。
                         </p>
                     </div>
                 </Card>
