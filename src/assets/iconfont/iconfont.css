@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1655382414904') format('truetype');
+  src: url('iconfont.ttf?t=1655434619823') format('truetype');
 }
 
 .iconfont {
@@ -19,10 +19,6 @@
   content: "\e895";
 }
 
-.icon-fanhui:before {
-  content: "\e66b";
-}
-
 .icon-yinle:before {
   content: "\e601";
 }
@@ -33,5 +29,13 @@
 
 .icon-shipin:before {
   content: "\e602";
+}
+
+.icon-10kejichuangxin-keji:before {
+  content: "\e629";
+}
+
+.icon-FanHui:before {
+  content: "\e60d";
 }
 

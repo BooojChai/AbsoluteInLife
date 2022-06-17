@@ -1,16 +1,16 @@
 <template>
     <div class="card-title">
-        <span class="iconfont icon-zhiding"></span>
-        <span>{{text}}</span>
+        <span class="iconfont" :class="content.icon" :style="{fontSize: 'inherit'}"></span>
+        <span>{{content.text}}</span>
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        text: {
-            type: String,
-            default: "It's title text"
+        content: {
+            icon:  "icon-zhiding",
+            text: "It's title text"
         }
     }
 }
@@ -18,15 +18,11 @@ export default {
 
 <style lang="less" scoped>
     .card-title {
-        color: #AFAFAF;;
+        color: #AFAFAF;
         font-size: 30px;
 
         span {
             margin-right: 20px;
-        }
-
-        .icon-zhiding {
-            font-size: inherit;
         }
     }
 

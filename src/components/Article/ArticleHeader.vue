@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <transition name="icon-trans" appear>
-            <div class="iconfont icon-fanhui" @click="$router.back()"></div>
+            <div class="iconfont icon-FanHui" @click="$router.back()"></div>
         </transition>
         <div class="wrapper">
             <transition name="title-trans" appear>
@@ -49,16 +49,15 @@ export default {
 
 <style lang="less" scoped>
     .header {
-        position: relative;
         height: 200px;
         color: #DFDFDF;
         opacity: .8;
         padding-left: 10px;
 
-        .icon-fanhui {
-            position: absolute;
-            top: 20px;
-            left: 20px;
+        .icon-FanHui {
+            position: fixed;
+            top: 30px;
+            left: 30px;
             font-size: 40px;
         }
 

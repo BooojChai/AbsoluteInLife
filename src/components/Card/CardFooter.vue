@@ -2,24 +2,19 @@
     <div class="card-footer">
     <div class="left">
         <span class="iconfont icon-riqi"></span>
-        <span>{{text.left}}</span>
+        <span>{{content.left}}</span>
     </div>
 
-    <div class="right">{{text.right}}</div>
+    <div class="right">{{content.right}}</div>
 </div>
 </template>
 
 <script>
 export default {
     props: {
-        text: {
-            type: Object,
-            default: function () {
-                return {
-                    left: "This is footer left",
-                    right: 'This is footer right'
-                }
-            }
+        content: {
+            left: "This is footer left",
+            right: 'This is footer right'
         },
     }
 }
@@ -31,6 +26,7 @@ export default {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        line-height: 40px;
 
         span {
             margin-right: 5px;

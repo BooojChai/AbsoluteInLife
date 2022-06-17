@@ -20,13 +20,6 @@
       "unicode_decimal": 59541
     },
     {
-      "icon_id": "2418238",
-      "name": "返回",
-      "font_class": "fanhui",
-      "unicode": "e66b",
-      "unicode_decimal": 58987
-    },
-    {
       "icon_id": "4198406",
       "name": "音乐",
       "font_class": "yinle",
@@ -46,6 +39,20 @@
       "font_class": "shipin",
       "unicode": "e602",
       "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "20531519",
+      "name": "科技",
+      "font_class": "10kejichuangxin-keji",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "27152658",
+      "name": "返回,撤销",
+      "font_class": "FanHui",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
     }
   ]
 }

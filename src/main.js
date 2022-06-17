@@ -17,5 +17,8 @@ Vue.use(ScrollTo)
 
 new Vue({
   render: h => h(App),
-  router
+  router,
+  beforeCreate() {
+		Vue.prototype.$eventbus = this
+	},
 }).$mount('#app')

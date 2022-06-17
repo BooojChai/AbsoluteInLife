@@ -42,7 +42,7 @@
                     而这里就是我最新鲜的一步脚印，会驻足许久的土壤。
                 </p>
             </div>
-            <CardFooter :text="{left:'2022/06/06',right:'#然后呢，一起走吧。'}"/>
+            <CardFooter :content="{left:'2022/06/06',right:'#然后呢，一起走吧。'}"/>
         </div>
         <Footer/>
     </div>
@@ -75,7 +75,7 @@ export default {
         background-color: rgba(24,24,24,.5);
         border-radius: 10px;
         margin-bottom: 30px;
-        padding: 30px;
+        padding: 30px 40px 20px 40px;
 
         .content {
             font-size: 18px;
