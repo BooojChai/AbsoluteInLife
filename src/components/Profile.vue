@@ -6,7 +6,7 @@
 
         <div class="sign">{{sign}}</div>
 
-        <div class="aboutme title">About Me</div>
+        <div class="aboutme title" @click="$router.push('./Article-01')">About Me</div>
 
         <div class="content">
             <li v-for="(item, index) in prop" :key="index">{{prop[index]}}</li>
@@ -62,7 +62,7 @@ export default {
                     name: "David Lee"
                 },
                 {
-                    url: "https://github.com/SamuelQZQ",
+                    url: "https://www.qzq.at/",
                     name: "Samuel Qian"
                 },
                 {
@@ -118,6 +118,10 @@ export default {
             line-height: 40px;
             width: 100%;
             border-top: 1px solid #333;
+        }
+
+        .title:hover {
+            color: #B7452f;;
         }
 
         .content {

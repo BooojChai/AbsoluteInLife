@@ -34,13 +34,13 @@
                 </div>
 
                 <p>我的第一篇正式文章，标题准备定为<strong class="red">一个双非一本程序员的大厂之路</strong>，聊一聊我这样一个来自普通高校的普通学渣，摸爬滚打的职业生涯路径。
-                    至于更新时间，我想6月中旬把它写完。至于以后这里要写些什么，管它呢，再说吧。</p>
+                    至于以后这里要写些什么，可能是随笔，可能是软核技术分享，可能是音乐电影分享，管它呢，再说吧。</p>
 
-                <p class="p_ending">
+                <div class="ending">
                     <img src="./assets/kk.jpg" alt="">
-                    我意识到自己的平凡，于是不断尝试在这个世界上留下我存在过的痕迹。<br>
-                    而这里就是我最新鲜的一步脚印，会驻足许久的土壤。
-                </p>
+                    <p><strong>我意识到自己的平凡，于是不断尝试在这个世界上留下我存在过的痕迹。<br>
+                        而这里就是我最新鲜的一步脚印，会驻足许久的土壤。</strong></p>
+                </div>
             </div>
             <CardFooter :content="{left:'2022/06/06',right:'#然后呢，一起走吧。'}"/>
         </div>
@@ -91,14 +91,18 @@ export default {
                 margin-bottom: 5px;
             }
 
-            .p_ending {
-                border-top: 1px dashed #777;
-                margin-top: 10px;
-                padding-top: 10px;
+            .ending {
+                border-top: 1px solid;
+                border-image: linear-gradient(to right, rgba(100,100,100,.5), rgba(100,100,100,.1)) 1;
+                margin-top: 30px;
+                padding-top: 20px;
             }
 
             img {
-                width: 100%;
+                width: 60%;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
             }
 
             li {
