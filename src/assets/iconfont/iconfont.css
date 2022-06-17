@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1655434619823') format('truetype');
+  src: url('iconfont.ttf?t=1655469211060') format('truetype');
 }
 
 .iconfont {
@@ -9,6 +9,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\e709";
 }
 
 .icon-zhiding:before {
@@ -25,6 +29,10 @@
 
 .icon-riqi:before {
   content: "\e612";
+}
+
+.icon-S_round:before {
+  content: "\e633";
 }
 
 .icon-shipin:before {

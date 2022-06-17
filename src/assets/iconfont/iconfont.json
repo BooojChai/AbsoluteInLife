@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "431779",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e709",
+      "unicode_decimal": 59145
+    },
+    {
       "icon_id": "688576",
       "name": "置顶",
       "font_class": "zhiding",
@@ -32,6 +39,13 @@
       "font_class": "riqi",
       "unicode": "e612",
       "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "15323514",
+      "name": "S_round_字母s",
+      "font_class": "S_round",
+      "unicode": "e633",
+      "unicode_decimal": 58931
     },
     {
       "icon_id": "20000252",

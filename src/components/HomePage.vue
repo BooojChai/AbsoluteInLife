@@ -35,7 +35,7 @@
                     </div>
                 </Card>
 
-                <Card :cardName="'Card-03'" :title="{icon:'icon-10kejichuangxin-keji',text:'03. 双非一本程序员的大厂之路（二）'}" :footer="{left:'2022/06/17',right:'#正在Coding'}" :backgroundImage="require('./Article/Page/assets/ss.png')" :targetArticle="'/'">
+                <Card :cardName="'Card-03'" :title="{icon:'icon-S_round',text:'03. 双非一本程序员的大厂之路（二）'}" :footer="{left:'2022/06/17',right:'#正在Coding'}" :backgroundImage="require('./Article/Page/assets/ss.png')" :targetArticle="'/'">
                     <div class="content" v-pre>
                         <p>
                             三星是典型的<strong class="red">外企风格</strong>：</p>

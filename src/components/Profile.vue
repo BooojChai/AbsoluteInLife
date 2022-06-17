@@ -54,6 +54,11 @@ export default {
                     iconClass: ["iconfont", "icon-shipin"],
                     url: "https://space.bilibili.com/89096037?spm_id_from=333.1007.0.0",
                     text: "YouthSquare Band - Bilibili"
+                },
+                {
+                    iconClass: ["iconfont", "icon-github"],
+                    url: "https://github.com/BooojChai",
+                    text: "BooojChai - Github"
                 }
             ],
             friends: [
