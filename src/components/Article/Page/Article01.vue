@@ -71,7 +71,7 @@ export default {
     background-size: cover;
 
     .main {
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(8px);
         background-color: rgba(24,24,24,.5);
         border-radius: 10px;
         margin-bottom: 30px;

@@ -4,7 +4,7 @@
         <div class="main wrapper">
             <Profile/>
             <div class="cards">
-                <Card :cardName="'Card-01'" :title="{icon:'icon-zhiding',text:'01. 关于这里，关于我'}" :footer="{left:'2022/06/06',right:'#第一篇文章'}" @click.native="navigateToArticle('/Article-01')" :backgroundImage="require('./Article/Page/assets/ABG2.jpg')">
+                <Card :cardName="'Card-01'" :title="{icon:'icon-zhiding',text:'01. 关于这里，关于我'}" :footer="{left:'2022/06/06',right:'#第一篇文章'}" :backgroundImage="require('./Article/Page/assets/ABG2.jpg')" :targetArticle="'/Article-01'">
                     <p>嗨，你好。</p>
 
                     <p>这里是Bojun，一名<strong
@@ -17,7 +17,7 @@
                     </p>
                 </Card>
 
-                <Card :cardName="'Card-02'" :isDefaultActive="true" :title="{icon:'icon-10kejichuangxin-keji',text:'02. 双非一本程序员的大厂之路（上）'}" :footer="{left:'2022/06/16',right:'#正在Coding'}" @click.native="navigateToArticle('/')" :backgroundImage="require('./Article/Page/assets/ABG3.jpg')">
+                <Card :cardName="'Card-02'" :isDefaultActive="true" :title="{icon:'icon-10kejichuangxin-keji',text:'02. 双非一本程序员的大厂之路（上）'}" :footer="{left:'2022/06/16',right:'#正在Coding'}" :backgroundImage="require('./Article/Page/assets/ABG3.jpg')">
                     <div class="content" v-pre>
                         <p>2016年，我从苏南某座小城的某所双非一本大学通信工程专业毕业，一晃已工作六年，而微软已经是我呆过的<strong class="red">第四家公司</strong>。按照公司属性给我的前东家和东家们做个分类，他们分别是：<br>
                             <strong>中型民营私企、一线电子厂外企、大型民营私企、世界一流外企。</strong>
@@ -56,12 +56,6 @@ export default {
 
         /* Cards */
         Card
-    },
-    methods: {
-        navigateToArticle(where) {
-            console.log("aaa")
-            this.$router.push(where)
-        }
     }
 }
 </script>

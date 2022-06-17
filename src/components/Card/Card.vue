@@ -1,7 +1,7 @@
 <template>
     <div class="card" @mouseover="handleMouse">
         <img :src="backgroundImage" alt="">
-        <CardTitle :content="title"></CardTitle>
+        <CardTitle :content="title"  @click.native="navigateToArticle(targetArticle)"></CardTitle>
             <collapse-transition>
                 <div class="content" v-show="isActive">
                     <slot></slot>
@@ -31,6 +31,10 @@ export default {
             type: String,
             required: true
         },
+        targetArticle: {
+            type: String,
+            default: "/"
+        },
         title: {
             icon: "icon-zhiding",
             text:  "It's title text"
@@ -49,6 +53,10 @@ export default {
         collapseTransition
     },
     methods: {
+        navigateToArticle(where) {
+            this.$router.push(where)
+        },
+
         handleMouse() {
             this.$eventbus.$emit('switchCard', this.cardName)
         }
