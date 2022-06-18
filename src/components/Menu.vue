@@ -46,7 +46,7 @@ export default {
                 },
                 {
                     name: "music",
-                    text: "Live & Life, \n  Music",
+                    text: "Live & Life, \n Music",
                     word: "只有音乐才是解药",
                     backgroudImg: require('../assets/music.jpg'),
                     target: "MusicPage",

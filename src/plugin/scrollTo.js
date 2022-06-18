@@ -20,6 +20,7 @@ export default{
         Vue.prototype.$cancelScroll = function() {
             if (isScrolling) {
                 clearInterval(timer)
+                isScrolling = false
             }
         }
     }
