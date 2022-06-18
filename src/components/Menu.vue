@@ -1,61 +1,88 @@
 <template>
     <div class="menu">
-        <div class="career"></div>
-        <div class="note"></div>
-        <div class="tech"></div>
-        <div class="music"></div>
-        <div class="sharing"></div>
+        <menuItem v-for="(item, index) in items" :key="index" :class="{'active':items[index].isActive}"
+        :style="{backgroundImage: 'linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1)), url('+ items[index].backgroudImg +')'}"
+         @mouseover="handleMouseOver(index)">
+            <div class="text">
+                {{items[index].text}}
+            </div>
+        </menuItem>
     </div>
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            items: [
+                {
+                    name: "career",
+                    text: "Professional Career",
+                    backgroudImg: require('../assets/career.jpg'),
+                    isActive: true
+                },
+                {
+                    name: "note",
+                    text: "Professional note",
+                    backgroudImg: require('../assets/note.jpg'),
+                    isActive: false
+                },
+                {
+                    name: "tech",
+                    text: "Professional tech",
+                    backgroudImg: require('../assets/tech.jpg'),
+                    isActive: false
+                },
+                {
+                    name: "music",
+                    text: "Professional music",
+                    backgroudImg: require('../assets/music.jpg'),
+                    isActive: false
+                },
+                {
+                    name: "sharing",
+                    text: "Professional sharing",
+                    backgroudImg: require('../assets/sharing.jpg'),
+                    isActive: false
+                },
+            ]
+        }
+    },
+    methods: {
+        handleMouseOver(index) {
+            for (let i = 0; i < this.items.length; i++) {
+                this.items[i].isActive = false
+            }
 
+            this.items[index].isActive = true
+        }
+    },
 }
 </script>
 
 <style lang="less" scoped>
     .menu {
         display: flex;
-        height: 71px;
+        height: 70px;
         border: 2px solid #282828;
         border-radius: 10px;
         overflow: hidden;
         margin: 10px;
 
-        div {
+        menuItem {
             flex: 1;
-            border-right: 2px solid #282828;
-            transition: all 1s;
+            border-right: 1px solid #181818;
             background-size: cover;
+            padding: 10px;
+            transition: all 1s;
         }
 
-        div:last-child {
+        menuItem:last-child {
             border: none
         }
 
-        div:hover {
-            flex: 2.5;
-        }
-
-        .career {
-            background-image: linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1)), url(../assets/career.jpg);
-        }
-
-        .note {
-            background-image: linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1)), url(../assets/note.jpg);
-        }
-
-        .tech {
-            background-image: linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1)), url(../assets/tech.jpg);
-        }
-
-        .music {
-            background-image: linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1)), url(../assets/music.jpg);
-        }
-
-        .sharing {
-            background-image: linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1)), url(../assets/sharing.jpg);
+        .active {
+            flex: 2.2
         }
     }
 </style>
