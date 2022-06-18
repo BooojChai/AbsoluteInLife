@@ -70,7 +70,7 @@ export default {
             }
 
             this.items[index].isActive = true
-            this.$router.push({name:this.items[index].target})
+            this.$router.replace({name:this.items[index].target})
         }
     },
 }

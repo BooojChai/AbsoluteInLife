@@ -122,7 +122,8 @@ export default {
             font-size: 20px;
             line-height: 40px;
             width: 100%;
-            border-top: 1px solid #333;
+            border-top: 1px solid;
+            border-image: linear-gradient(to right, rgba(66,66,66,.9), rgba(66,66,66,.1)) 1;
         }
 
         .title:hover {

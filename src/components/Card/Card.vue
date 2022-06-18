@@ -94,7 +94,7 @@ export default {
             width: 100%;
             top: 0;
             left: 0;
-            opacity: .2;
+            opacity: .4;
             z-index: -1;
         }
 
