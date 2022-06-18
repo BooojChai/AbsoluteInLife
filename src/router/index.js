@@ -14,7 +14,6 @@ import Article02 from '../components/Article/Page/Article02'
 export default new VueRouter({
 	routes:[
 		{
-            name: 'HomePage',
 			path:'/',
 			component: HomePage,
 			children:[
@@ -61,3 +60,9 @@ export default new VueRouter({
 		}
 	]
 })
+
+const originalPush = VueRouter.prototype.push
+
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}

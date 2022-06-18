@@ -84,7 +84,7 @@ export default {
         position: relative;
         padding: 20px 30px 10px 30px;
         border-radius: 10px;
-        border: #161616 1px solid;
+        border: #181818 1px solid;
         background-size: cover;
         overflow: hidden;
         margin-bottom: 20px;

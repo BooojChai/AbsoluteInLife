@@ -33,7 +33,7 @@ export default {
 <style lang="less" scoped>
 .homepage .main {
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
 
     .core-content {

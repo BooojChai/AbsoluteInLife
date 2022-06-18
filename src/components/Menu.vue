@@ -1,6 +1,6 @@
 <template>
     <div class="menu">
-        <menuItem v-for="(item, index) in items" :key="index" :class="{'active':items[index].isActive}"
+        <div class="menu-item" v-for="(item, index) in items" :key="index" :class="{'active':items[index].isActive}"
         :style="{backgroundImage: 'linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1)), url('+ items[index].backgroudImg +')'}"
          @mouseover="handleMouseOver(index)">
             <div class="text">
@@ -11,7 +11,7 @@
                     {{items[index].word}}
                 </div>
             </transition>
-        </menuItem>
+        </div>
     </div>
 </template>
 
@@ -85,7 +85,7 @@ export default {
         overflow: hidden;
         margin: 10px;
 
-        menuItem {
+        .menu-item {
             flex: 1;
             float: left;
             position: relative;
@@ -115,7 +115,7 @@ export default {
             }
         }
 
-        menuItem:last-child {
+        .menu-item:last-child {
             border: none
         }
 
