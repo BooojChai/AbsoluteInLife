@@ -10,6 +10,7 @@ import SharingPage from '../components/SharingPage'
 /* Articles */
 import Article01 from '../components/Article/Page/Article01'
 import Article02 from '../components/Article/Page/Article02'
+import Article03 from '../components/Article/Page/Article03'
 
 export default new VueRouter({
 	routes:[
@@ -57,6 +58,11 @@ export default new VueRouter({
             name: 'Article-02',
 			path:'/Article-02',
 			component: Article02
+		},
+		{
+            name: 'Article-03',
+			path:'/Article-03',
+			component: Article03
 		}
 	]
 })
