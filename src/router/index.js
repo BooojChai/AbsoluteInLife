@@ -1,6 +1,11 @@
 import VueRouter from 'vue-router'
 
 import HomePage from '../components/HomePage'
+import CareerPage from '../components/CareerPage'
+import NotePage from '../components/NotePage'
+import TechPage from '../components/TechPage'
+import MusicPage from '../components/MusicPage'
+import SharingPage from '../components/SharingPage'
 
 /* Articles */
 import Article01 from '../components/Article/Page/Article01'
@@ -11,7 +16,38 @@ export default new VueRouter({
 		{
             name: 'HomePage',
 			path:'/',
-			component: HomePage
+			component: HomePage,
+			children:[
+				{
+					path:'/',
+					component: CareerPage,
+				},
+				{
+					name: 'CareerPage',
+					path:'career',
+					component: CareerPage,
+				},
+				{
+					name: 'NotePage',
+					path:'note',
+					component: NotePage,
+				},
+				{
+					name: 'TechPage',
+					path:'tech',
+					component: TechPage,
+				},
+				{
+					name: 'MusicPage',
+					path:'music',
+					component: MusicPage,
+				},
+				{
+					name: 'SharingPage',
+					path:'sharing',
+					component: SharingPage,
+				}
+			]
 		},
         {
             name: 'Article-01',

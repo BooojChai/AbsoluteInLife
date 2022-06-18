@@ -17,6 +17,11 @@ export default {
     src: url(./assets/font/Oswald-Regular.ttf);
   }
 
+  @font-face {
+    font-family: "shouxie";
+    src: url(./assets/font/shouxie.ttf);
+  }
+
   * {
     margin: 0;
     padding: 0;

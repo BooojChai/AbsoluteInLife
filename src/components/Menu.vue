@@ -23,8 +23,9 @@ export default {
                 {
                     name: "career",
                     text: "Professional \n Career",
-                    word: "然后呢，一起走吧",
+                    word: "前路依然遥远",
                     backgroudImg: require('../assets/career.jpg'),
+                    target: "CareerPage",
                     isActive: true
                 },
                 {
@@ -32,6 +33,7 @@ export default {
                     text: "Informal \n Essay",
                     word: "最重要的小事",
                     backgroudImg: require('../assets/note.jpg'),
+                    target: "NotePage",
                     isActive: false
                 },
                 {
@@ -39,13 +41,15 @@ export default {
                     text: "Technology \n Science",
                     word: "软核技术分享",
                     backgroudImg: require('../assets/tech.jpg'),
+                    target: "TechPage",
                     isActive: false
                 },
                 {
                     name: "music",
-                    text: "Music, Live, \n Life",
+                    text: "Live & Life, \n  Music",
                     word: "只有音乐才是解药",
                     backgroudImg: require('../assets/music.jpg'),
+                    target: "MusicPage",
                     isActive: false
                 },
                 {
@@ -53,6 +57,7 @@ export default {
                     text: "Sharing \n Love",
                     word: "促膝长谈，畅聊一切",
                     backgroudImg: require('../assets/sharing.jpg'),
+                    target: "SharingPage",
                     isActive: false
                 },
             ]
@@ -65,6 +70,7 @@ export default {
             }
 
             this.items[index].isActive = true
+            this.$router.push({name:this.items[index].target})
         }
     },
 }
@@ -101,10 +107,11 @@ export default {
 
             .word {
                 position: absolute;
-                bottom: 10px;
+                bottom: 8px;
                 right: 10px;
-                font-size: 14px;
-                font-weight: 550;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: "shouxie";
             }
         }
 
@@ -113,7 +120,7 @@ export default {
         }
 
         .active {
-            flex: 2.2
+            flex: 2;
         }
     }
 </style>

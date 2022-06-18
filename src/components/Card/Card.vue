@@ -54,7 +54,7 @@ export default {
     },
     methods: {
         navigateToArticle(where) {
-            this.$router.push(where)
+            this.$router.push({name:where})
         },
 
         handleMouse() {
