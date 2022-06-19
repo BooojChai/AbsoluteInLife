@@ -1,6 +1,6 @@
 <template>
     <div class="article" @mousewheel="$cancelScroll()">
-        <Header :title="'03. 双非一本程序员的大厂之路（二）'" :mark="'扬帆，启航。'"/>
+        <Header :title="'双非一本程序员的大厂之路（二）'" :mark="'扬帆，启航。'" :item="'Professional Career. 03'"/>
         <div class="main wrapper">
             <div class="content" v-pre>
                 <h1>承.  Samsung</h1>
@@ -17,7 +17,7 @@
 
                 <p>机试实际就是上机代码考试，考察内容是基础和中等算法，三星为不同工作年限的应聘者划定了考试难度等级：应届生以及毕业一年之内的应聘者，考试等级为Advance，其难度介于<a href="https://leetcode.cn/" target="_blank"><strong class="red">LeetCode</strong></a> Easy和Medium之间。毕业一年以上的社招应聘者，考试等级为Professional，难度介于Medium和Hard之间。</p>
 
-                <p>当时毕业不到一年的我被划分在应届生的范畴，需要进行Advance级别代码考试，考试时长为3小时，编程语言为<strong>C/C++/Java可选</strong>，3小时内编写完代码并提交通过系统设计的5个input case则通过，一共有三次考试机会，通过方可进入面试。有了JY的先进经验，我早已得知Advance考试的算法范围为<strong>深度优先搜索DFS、广度优先搜索BFS，以及二分查找</strong>之中。那是我第一次接触算法，当时公司的不能上网，只有一个VC++ 6.0的IDE，我编打听了JY考试的原题，同时在手机上搜一些经典算法题，然后在公司的单机电脑上手撕代码。</p>
+                <p>当时毕业不到一年的我被划分在应届生的范畴，需要进行Advance级别代码考试，考试时长为3小时，编程语言为<strong>C/C++/Java可选</strong>，3小时内编写完代码并提交通过系统设计的5个input case则通过，一共有三次考试机会，通过方可进入面试。有了JY的先进经验，我早已得知Advance考试的算法范围为<strong>深度优先搜索DFS、广度优先搜索BFS，以及二分查找</strong>之中。那是我第一次接触算法，当时公司的不能上网，只有一个VC++ 6.0的IDE，于是我打听了JY考试的原题，同时在手机上搜一些经典算法题，然后在公司的单机电脑上手撕代码。</p>
 
                 <p>最终我花费了<strong class="red">两次机会</strong>来通过Advance考试。第一次去考试的时候发生了一个小插曲，在考试进行到2.5小时的时候，我已经通过了4个case，正在调试第五个case的时候，不小心<strong class="red">一脚踢断</strong>了电脑主机的地插电源，而我又从头至尾没有注意过还有一个Save按钮，于是所有代码都丢掉了，剩下半小时也全然不够我重新编程调试，直接放弃掉了第一次考试。好在有了充分的准备，第二次考试有惊无险在两个小时左右提交通过，进入了面试后，三位面试官也没有难为只有十个月工作经验的我，只是我至今已经对那个我没有答上来的问题记忆犹新：</p>
 
@@ -53,11 +53,11 @@
 
                 <p>手环的demo项目开始后，我加入了<strong>UI框架小组</strong>。把玩了设备，阅读了源码，我发现这个项目的UI框架是一个空壳——只有一些最基础的文字、图片组件，<strong>没有页面组件、没有事件分发、没有硬件交互能力</strong>。接手这样一个<strong class="red">烂摊子</strong>，实在不是一个容易的任务。</p>
 
-                <p>较低的起点同时意味着较大的进步空间，薄弱的基础建设也意味着在上面耕耘的人们有了<strong class="red">Being a maker</strong>的机会。肩负艰巨任务，我开始<strong>一行不漏得阅读源码，下探到硬件驱动，图像渲染，深入底层原理，再从土地里生根发言，封装了事件分发、页面管理、动画、滑动等手环的核心模块</strong>，对照着已经在欧洲上市的Galaxy Fit手环，在UI层面上，我们几乎一比一复刻了其主题功能界面，<strong>在流畅度和平顺性上甚至更胜一筹。</strong></p>
+                <p>较低的起点同时意味着较大的进步空间，薄弱的基础建设也意味着在上面耕耘的人们有了<strong class="red">Being a maker</strong>的机会。肩负艰巨任务，我开始<strong>一行不漏得阅读源码，下探到硬件驱动，图像渲染，深入底层原理，再从土地里生根发芽，封装了事件分发、页面管理、动画、滑动等手环的核心模块</strong>，对照着已经在欧洲上市的<a href="https://www.samsung.com/cn/watches/galaxy-fit/galaxy-fit2-black-bluetooth-sm-r220nzkachc/" target="_blank"><strong class="red">Galaxy Fit</strong></a>手环，在UI层面上，我们几乎一比一复刻了其主题功能界面，<strong>在流畅度和平顺性上甚至更胜一筹。</strong></p>
 
                 <p>当我们拍下和Galaxy Fit的对比视频，发给韩国总部的项目Leader时，他的形容是“<strong class="red">Amazing! Wonderful!</strong> ”，并向我们索要了代码补丁。这是我在三星工作最有成就感的时刻，我猜想如果我们能继续<strong>打通传感器，蓝牙等模块，也许未来真的有机会商品化落地这个项目</strong>，而我们这些地基的<strong class="red">铸造者</strong>便会是引领项目的那群人。</p>
 
-                <p>可是有些故事在开头时便注定了结尾。手环项目在部长去韩国总部的demo上并<strong>没有争取到项目和人力资源</strong>。9月，部长找到我们几个在手环项目上有所表现的同时，告诉我们接下来会把我们转移到别的项目组。</p>
+                <p>可是有些故事在开头时便注定了结尾。手环项目在部长去韩国总部的demo上并<strong>没有争取到项目和人力资源</strong>。9月，部长找到我们几个在手环项目上有所表现的同事，告诉我们接下来会把我们转移到别的项目组。</p>
 
                 <p><strong>故事讲到这里，离开似乎变成了注定。</strong></p>
 
@@ -143,6 +143,15 @@ export default {
 
             * {
                 margin-bottom: 12px;
+            }
+
+            a {
+                border-bottom: 1px solid rgba(183, 69, 47, .7);
+                transition: all .1s;
+            }
+
+            a:hover {
+                border-bottom: 2px solid rgba(183, 69, 47, 1);
             }
 
             li {

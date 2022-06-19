@@ -7,9 +7,14 @@
             <transition name="title-trans" appear>
                 <div class="title">{{title}}</div>
             </transition>
-            <transition name="my-word-trans" appear>
-                <div class="my-word" v-if="myWord.show">{{myWord.text}}</div>
-            </transition>
+            <div class="item">
+                <transition name="my-word-trans">
+                    <div class="my-word" v-show="myWord.show">{{myWord.text}}</div>
+                </transition>
+                <transition name="my-word-trans">
+                    <div class="my-item" v-show="myItem.show">{{myItem.text}}</div>
+                </transition>
+            </div>
         </div>
     </div>
 </template>
@@ -24,6 +29,10 @@ export default {
         mark: {
             type: String,
             default: "To find the absolute in your life.",
+        },
+        item: {
+            type: String,
+            default: "Item. 01",
         }
     },
     data() {
@@ -31,6 +40,10 @@ export default {
             myWord: {
                 show: false,
                 text: this.mark
+            },
+            myItem: {
+                show: false,
+                text: this.item
             }
         }
     },
@@ -38,6 +51,9 @@ export default {
         startUp() {
             setTimeout(() => {
                 this.myWord.show = true
+            }, 500);
+            setTimeout(() => {
+                this.myItem.show = true
             }, 1000);
         }
     },
@@ -49,7 +65,7 @@ export default {
 
 <style lang="less" scoped>
     .header {
-        height: 200px;
+        height: 190px;
         color: #DFDFDF;
         opacity: .8;
         padding-left: 10px;
@@ -85,17 +101,30 @@ export default {
             transition: all 2s;
         }
 
-        .my-word {
-            font-size: 20px;
-            text-align: left;
-        }
+        .item {
+            display: flex;
+            justify-content: space-between;
 
-        .my-word-trans-enter-active {
-            transition: all 4s;
-        }
+            .my-word {
+                font-size: 20px;
+                text-align: left;
+                opacity: .85;
+            }
 
-        .my-word-trans-enter {
-            opacity: 0;
+            .my-item {
+                font-size: 20px;
+                text-align: left;
+                margin-right: 10px;
+                opacity: .85;
+            }
+
+            .my-word-trans-enter-active {
+                transition: all 4s;
+            }
+
+            .my-word-trans-enter {
+                opacity: 0;
+            }
         }
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="article" @mousewheel="$cancelScroll()">
-        <Header :title="'01. 关于这里，关于我。'" :mark="'然后呢，一起走吧。'"/>
+        <Header :title="'关于这里，关于我。'" :mark="'然后呢，一起走吧。'" :item="'Professional Career. 01'"/>
         <div class="main wrapper">
             <div class="content" v-pre>
                 <h2>嗨，你好。</h2>

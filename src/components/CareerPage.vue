@@ -13,7 +13,7 @@
             </p>
         </Card>
 
-        <Card :cardName="'Card-02'" :title="{icon:'icon-10kejichuangxin-keji',text:'02. 双非一本程序员的大厂之路（一）'}" :footer="{left:'2022/06/16',right:'#雷霆雨露，皆是礼物'}" :backgroundImage="require('./Article/Page/assets/ABG3.jpg')" :targetArticle="'Article-02'">
+        <Card :cardName="'Card-02'" :title="{icon:'icon-10kejichuangxin-keji',text:'02. 双非一本程序员的大厂之路（一）'}" :footer="{left:'2022/06/17',right:'#雷霆雨露，皆是礼物'}" :backgroundImage="require('./Article/Page/assets/ABG3.jpg')" :targetArticle="'Article-02'">
             <div class="content" v-pre>
                 <p>2016年，我从苏南某座小城的某所双非一本大学通信工程专业毕业，一晃已工作六年，而微软已经是我呆过的<strong class="red">第四家公司</strong>。按照公司属性给我的前东家和东家们做个分类，他们分别是：<br>
                     <strong>中型民营私企、一线电子厂外企、大型民营私企、世界一流外企。</strong>
@@ -31,7 +31,7 @@
             </div>
         </Card>
 
-        <Card :cardName="'Card-03'" :isDefaultActive="true" :title="{icon:'icon-S_round',text:'03. 双非一本程序员的大厂之路（二）'}" :footer="{left:'2022/06/17',right:'#任意门，通向世界'}" :backgroundImage="require('./Article/Page/assets/ss.png')" :targetArticle="'Article-03'">
+        <Card :cardName="'Card-03'" :isDefaultActive="true" :title="{icon:'icon-S_round',text:'03. 双非一本程序员的大厂之路（二）'}" :footer="{left:'2022/06/18',right:'#任意门，通向世界'}" :backgroundImage="require('./Article/Page/assets/ss.png')" :targetArticle="'Article-03'">
             <div class="content" v-pre>
                 <p>
                     三星是典型的<strong class="red">外企风格</strong>：</p>

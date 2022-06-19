@@ -1,8 +1,8 @@
 <template>
     <div class="article" @mousewheel="$cancelScroll()">
-        <Header :title="'02. 双非一本程序员的大厂之路（一）'" :mark="'雷霆雨露，皆是礼物。'"/>
+        <Header :title="'双非一本程序员的大厂之路（一）'" :mark="'雷霆雨露，皆是礼物。'" :item="'Professional Career. 02'"/>
         <div class="main wrapper">
-            <div class="content" v-pre>
+            <div class="content">
                 <h1>起. 那家小公司</h1>
 
                 <h2>加入它</h2>
@@ -57,7 +57,7 @@
 
                 <p><strong class="red">“我先走了，明天提离职。”</strong></p>
 
-                <p><strong>- 未完待续 -</strong></p>
+                <div class="tonext" @click="$router.push({name:'Article-03'})"><strong>下集： 双非一本程序员的大厂之路（二）</strong></div>
 
                 <div class="ending">
                     <img src="./assets/pl.jpg" alt="">
@@ -109,6 +109,15 @@ export default {
                 margin-bottom: 12px;
             }
 
+            a {
+                border-bottom: 1px solid rgba(183, 69, 47, .7);
+                transition: all .1s;
+            }
+
+            a:hover {
+                border-bottom: 2px solid rgba(183, 69, 47, 1);
+            }
+
             li {
                 margin-top: 5px;
                 margin-bottom: 5px;
@@ -139,6 +148,11 @@ export default {
 
             li:hover a {
                 color: #B7452f;
+            }
+
+            .tonext {
+                margin-top: 20px;
+                cursor: pointer;
             }
         }
     }

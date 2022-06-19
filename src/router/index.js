@@ -7,10 +7,13 @@ import TechPage from '../components/TechPage'
 import MusicPage from '../components/MusicPage'
 import SharingPage from '../components/SharingPage'
 
-/* Articles */
+/* Career Articles */
 import Article01 from '../components/Article/Page/Article01'
 import Article02 from '../components/Article/Page/Article02'
 import Article03 from '../components/Article/Page/Article03'
+
+/* Music Article */
+import MusicArticle01 from '../components/Article/Page/MusicArticle01'
 
 export default new VueRouter({
 	routes:[
@@ -63,6 +66,11 @@ export default new VueRouter({
             name: 'Article-03',
 			path:'/Article-03',
 			component: Article03
+		},
+		{
+            name: 'MusicArticle-01',
+			path:'/MusicArticle-01',
+			component: MusicArticle01
 		}
 	]
 })
