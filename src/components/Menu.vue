@@ -2,7 +2,7 @@
     <div class="menu">
         <div class="menu-item" v-for="(item, index) in items" :key="index" :class="{'active':items[index].isActive}"
         :style="{backgroundImage: 'linear-gradient(to right, rgba(18, 18, 18, 0), rgba(18, 18, 18, 1)), url('+ items[index].backgroudImg +')'}"
-         @mouseover="handleMouseOver(index)">
+        @mouseover="handleMouseOver(index)">
             <div class="text">
                 {{items[index].text}}
             </div>
@@ -63,6 +63,12 @@ export default {
             ]
         }
     },
+    props: {
+        isDemo: {
+            type: Boolean,
+            default: false
+        }
+    },
     methods: {
         handleMouseOver(index) {
             for (let i = 0; i < this.items.length; i++) {
@@ -70,7 +76,10 @@ export default {
             }
 
             this.items[index].isActive = true
-            this.$router.replace({name:this.items[index].target})
+
+            if (!this.isDemo) {
+                this.$router.replace({name:this.items[index].target})
+            }
         }
     },
 }

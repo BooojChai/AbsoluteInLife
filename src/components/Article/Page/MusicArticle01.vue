@@ -3,17 +3,17 @@
         <Header :title="'记录2022元旦微软苏州Office 乐队排练'" :mark="'未命名乐队首聚，生涩却有趣'" :item="'Music, Live & Life. 01'"/>
         <div class="main wrapper">
             <div class="content">
-                <h2>Cover. &nbsp<a href="https://y.qq.com/n/ryqq/songDetail/003TEnl83gBNge" target="_blank">山海 - 草东没有派对</a></h2>
+                <h2>Cover. <a href="https://y.qq.com/n/ryqq/songDetail/003TEnl83gBNge" target="_blank">山海 - 草东没有派对</a></h2>
                 <video width="640" controls>
                     <source src="./assets/sh.mp4" type="video/mp4">
                 </video>
 
-                <h2>Cover. &nbsp<a href="https://y.qq.com/n/ryqq/songDetail/003icnfI1qimEE" target="_blank">Chemical Bus - 逃跑计划</a></h2>
+                <h2>Cover. <a href="https://y.qq.com/n/ryqq/songDetail/003icnfI1qimEE" target="_blank">Chemical Bus - 逃跑计划</a></h2>
                 <video width="640" controls>
                     <source src="./assets/chemical_bus.mp4" type="video/mp4">
                 </video>
 
-                <h2>Cover Half. &nbsp<a href="https://y.qq.com/n/ryqq/songDetail/004A2bMN49hRml" target="_blank">爱情你比我想的阁较伟大 - 茄子蛋</a></h2>
+                <h2>Cover Half. <a href="https://y.qq.com/n/ryqq/songDetail/004A2bMN49hRml" target="_blank">爱情你比我想的阁较伟大 - 茄子蛋</a></h2>
                 <video width="640" controls>
                     <source src="./assets/dwl.mp4" type="video/mp4">
                 </video>

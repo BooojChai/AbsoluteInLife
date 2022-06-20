@@ -98,7 +98,7 @@
                         </div>
                     </div>
                     <p><strong>每个梦都像任意门往不同世界。<br>
-                       而你的故事，现在正是起点。</strong></p>
+                        而你的故事，现在正是起点。</strong></p>
                 </div>
             </div>
             <CardFooter :content="{left:'2022/06/18',right:'#扬帆，启航。'}"/>

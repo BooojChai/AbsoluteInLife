@@ -15,6 +15,9 @@ import Article03 from '../components/Article/Page/Article03'
 /* Music Article */
 import MusicArticle01 from '../components/Article/Page/MusicArticle01'
 
+/* Tech Article */
+import TechArticle01 from '../components/Article/Page/TechArticle01'
+
 export default new VueRouter({
 	routes:[
 		{
@@ -71,6 +74,11 @@ export default new VueRouter({
             name: 'MusicArticle-01',
 			path:'/MusicArticle-01',
 			component: MusicArticle01
+		},
+		{
+            name: 'TechArticle-01',
+			path:'/TechArticle-01',
+			component: TechArticle01
 		}
 	]
 })
@@ -78,5 +86,5 @@ export default new VueRouter({
 const originalPush = VueRouter.prototype.push
 
 VueRouter.prototype.push = function push(location) {
-  return originalPush.call(this, location).catch(err => err)
+	return originalPush.call(this, location).catch(err => err)
 }

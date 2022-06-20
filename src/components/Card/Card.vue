@@ -75,6 +75,7 @@ export default {
     },
     beforeDestroy() {
         this.$eventbus.$off('switchCard')
+
     },
 }
 </script>
@@ -87,7 +88,7 @@ export default {
         border: #181818 1px solid;
         background-size: cover;
         overflow: hidden;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
         img {
             position: absolute;
