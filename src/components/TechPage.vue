@@ -1,6 +1,6 @@
 <template>
     <div class="tech">
-        <Card :cardName="'Card-01'" :isDefaultActive="'true'" :title="{icon:'icon-zhiding',text:'01. 用50行代码实现手风琴菜单'}" :footer="{left:'To Be Done',right:'# H5/CSS/JavaScript/Vue'}" :backgroundImage="require('./Article/Page/assets/ABG3.jpg')" :targetArticle="'TechArticle-01'">
+        <Card :cardName="'Card-01'" :isDefaultActive="'true'" :title="{icon:'icon-zhiding',text:'01. 用50行代码实现手风琴菜单'}" :footer="{left:'2022/6/20',right:'# H5/CSS/JavaScript/Vue'}" :backgroundImage="require('./Article/Page/assets/ABG3.jpg')" :targetArticle="'TechArticle-01'">
             <p>
                 软核技术分享的第一篇文章，准备从我的<strong>技术栈顶</strong>出发，介绍一下如何手撸一个上方的手风琴菜单组件。
             </p>
